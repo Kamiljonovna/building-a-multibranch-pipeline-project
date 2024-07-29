@@ -1,8 +1,13 @@
 pipeline {
     agent {
         docker {
+<<<<<<< HEAD
             image 'node:6-alpine'
             args '-p 3000:3000 -p 5001:5001'
+=======
+            image 'node:lts-alpine'
+            args '-p 3000:3000 -p 5000:5000'
+>>>>>>> e00492fbd7c8325e5ec726d0e99beb38c71ecca7
         }
     }
     environment {
